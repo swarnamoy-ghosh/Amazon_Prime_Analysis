@@ -1,109 +1,104 @@
-📊 Amazon Prime Video Content Analysis
+# **📊 Amazon Prime Video Content Analysis**
+
 This project provides a comprehensive exploratory data analysis (EDA) of Amazon Prime Video’s content catalog, focusing on key trends, content distribution, viewer preferences, and performance metrics. The goal is to generate actionable insights to support business decisions in the OTT (Over-The-Top) entertainment space.
 
-📁 Dataset Description
+## 📁 Dataset Description
 The dataset includes metadata about titles available on Amazon Prime, including:
 
-title: Name of the show or movie
+* title: Name of the show or movie
 
-type: Movie or Show
+* type: Movie or Show
 
-release_year: Year of release
+* release_year: Year of release
 
-age_certification: Audience suitability rating
+* age_certification: Audience suitability rating
 
-runtime: Runtime in minutes
+* runtime: Runtime in minutes
 
-genres: List of associated genres
+* genres: List of associated genres
 
-production_countries: Country of origin
+* production_countries: Country of origin
 
-seasons: Number of seasons (for shows)
+* seasons: Number of seasons (for shows)
 
-imdb_score, imdb_votes: IMDb ratings and votes
+* imdb_score, imdb_votes: IMDb ratings and votes
 
-tmdb_score, tmdb_popularity: TMDb ratings and popularity metrics
+* tmdb_score, tmdb_popularity: TMDb ratings and popularity metrics
 
-📌 Objectives
-Clean and preprocess raw data
+## 📌 Objectives
+* Clean and preprocess raw data
 
-Understand content type distribution
+* Understand content type distribution
 
-Analyze genre and country-based trends
+* Analyze genre and country-based trends
 
-Explore rating correlations (IMDb & TMDb)
+* Explore rating correlations (IMDb & TMDb)
 
-Identify top-rated, most-voted, and most-popular titles
+* Identify top-rated, most-voted, and most-popular titles
 
-Examine trends over time using time series
+* Examine trends over time using time series
 
-Derive business-impacting insights
+* Derive business-impacting insights
 
-🧹 Data Cleaning & Preprocessing
-Removed duplicates and whitespace
+## 🧹 Data Cleaning & Preprocessing
+* Removed duplicates and whitespace
 
-Converted list columns (e.g., genres, countries) from strings to Python lists
+* Converted list columns (e.g., genres, countries) from strings to Python lists
 
-Filled missing values intelligently (e.g., averages, placeholders)
+* Filled missing values intelligently (e.g., averages, placeholders)
 
-Assigned unique IMDb IDs where missing
+* Assigned unique IMDb IDs where missing
 
-Separated analysis for MOVIE and SHOW
+* Separated analysis for MOVIE and SHOW
 
-📊 Key Visualizations
-Distribution of Content Type (Bar & Pie Chart)
+## 📊 Key Visualizations
+* Distribution of Content Type (Pie Chart)
 
-Genre Popularity (Bar Chart with color mapping)
+* Genre Popularity (Bar Chart with color mapping)
 
-Top Content-Producing Countries (Bar Chart & Treemap)
+* Top Content-Producing Countries (Treemap)
 
-Ratings Correlation Heatmaps (for Movies & Shows)
+* Ratings Correlation Heatmaps (for Movies & Shows)
 
-Genre-wise IMDb Scores (Bar Chart)
+* Content Growth Over Time (Time Series)
 
-Content Growth Over Time (Time Series)
+* Top Rated & Popular Titles (Bubble Charts)
 
-Age Certification Distribution (Countplot & Pie Chart)
+## 🔍 Insights
+* 📈 Highest content growth occurred between 2018–2021
 
-Top Rated & Popular Titles (Bar & Bubble Charts)
+* 🌍 U.S., India, and U.K. lead in production volume
 
-🔍 Insights
-📈 Highest content growth occurred between 2018–2021
+* 🎭 Drama is the most frequent genre across types
 
-🌍 U.S., India, and U.K. lead in production volume
+* 🌟 Titles with high IMDb/TMDb scores correlate with high votes and popularity
 
-🎭 Drama is the most frequent genre across types
+## ✅ Business Impact
+### Positive:
+* Improve recommendation systems with genre and rating insights
 
-🌟 Titles with high IMDb/TMDb scores correlate with high votes and popularity
+* Focus marketing efforts on high-performing regions and genres
 
-🧒 Diverse age certification allows targeting multiple audience segments
+* Increase user retention by promoting top-rated content
 
-✅ Business Impact
-Positive:
-Improve recommendation systems with genre and rating insights
+### Negative:
+* Overdependence on few genres or countries may limit diversity
 
-Focus marketing efforts on high-performing regions and genres
+* Inconsistent content addition may confuse long-term users
 
-Increase user retention by promoting top-rated content
+## 🚀 Suggestions for Improvement
+* Introduce more localized content for underrepresented regions
 
-Negative:
-Overdependence on few genres or countries may limit diversity
+* Promote high-quality shows with growing popularity trends
 
-Inconsistent content addition may confuse long-term users
+* Monitor underperforming genres and replace with better alternatives
 
-🚀 Suggestions for Improvement
-Introduce more localized content for underrepresented regions
+## 📌 Tools Used
+* Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly)
 
-Promote high-quality shows with growing popularity trends
+* Jupyter/Google Colab for interactive analysis
 
-Monitor underperforming genres and replace with better alternatives
+* Plotly for interactive dashboards
 
-📌 Tools Used
-Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly)
-
-Jupyter/Google Colab for interactive analysis
-
-Plotly for interactive dashboards
-
-🧠 Conclusion
-This project gives a data-backed perspective into Amazon Prime's catalog, offering insights that help in content planning, audience targeting, and strategic content curation. The methodology and findings can be adapted for other OTT platforms as well.
+## 🧠 Conclusion
+* This project gives a data-backed perspective into Amazon Prime's catalog, offering insights that help in content planning, audience targeting, and strategic content curation. The methodology and findings can be adapted for other OTT platforms as well.
